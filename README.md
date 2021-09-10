@@ -33,7 +33,7 @@ The execution time of the original code for 2017 is 1.4219s and for 2018 is 1.82
 
  
 2. Code Structure  
-The main differences between the original code and the refactored script are their code structures. The original code has bigger chunk of functional block, useing nested For loops to iterate through both ticker index and row number to analysis data and also to output to result. Section of original code shown below(some codes to get data are omitted in the quote as they're in too details that is not relavent to this statement. Same as that for refactored code quote). 
+The main differences between the original code and the refactored script are their code structures. The original code has bigger chunk of functional block, using nested For loops to iterate through both ticker index and row number to analysis data and also to output to result. Section of original code shown below(some codes to get data are omitted in the quote as they're in too details that is not relavent to this statement. Same as that for refactored code quote). 
 ``` 
   '4) loop through the tickers
     For i = 0 To 11              ' 1. 1st loop to loop through the ticker array
@@ -84,8 +84,6 @@ The main differences between the original code and the refactored script are the
 
 
 ## Summary 
-- detailed statement on advantages and disadvantages of refactoring code in general (3)
-- detailed statement on pro and cons of the originals and refactored VBA (3)
 
-- Refactoring is to reconstruct the original code, breaking the original large chunk of rundown into smaller functioning blocks, aiming to save execution time. The most emplicit advantage of refactoring is to make the code more efficient in a timely manner. Yet its limitation is obvious too. Since refactoring only restructuring the original code, it does not introduce new behaviour to the original. In other words, the refactored code will get the same analysis results as the original code.  
+- Refactoring is to reconstruct the original code, breaking the original large chunk of rundown into smaller functioning blocks, aiming to enhance efficiency. The most emplicit advantage of refactoring is to make the code run faster. Yet its limitation is obvious too. Since refactoring only restructuring the original code, it does not introduce new behaviour to the original. In other words, the refactored code will get the same analysis results as the original code.  
 - For instant, the VBA script used in this module to analysis the target 12 stocks in given years. The original code takes about 1.5s to finish execution. The refactored code takes only about 1/5 of the original time and gets the same results. Now if the task were to analysis a larger stock dataset instead of the target 12 stocks, because the refactored code, same as the original one, only analyzes the given 12 stocks, a new VBA script, or a new version of it, would be needed. 
